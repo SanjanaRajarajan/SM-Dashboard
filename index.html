@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Dashboard</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <button class="sidebar-toggle">☰</button>
+    <div class="dashboard">
+        <div class="sidebar">
+            <h2>Dashboard</h2>
+            <a href="#" class="menu-link active" data-platform="Overview">Overview</a>
+            <a href="#" class="menu-link" data-platform="Facebook">Facebook</a>
+            <a href="#" class="menu-link" data-platform="YouTube">YouTube</a>
+            <a href="#" class="menu-link" data-platform="WhatsApp">WhatsApp</a>
+            <a href="#" class="menu-link" data-platform="Twitter">Twitter</a>
+        </div>
+        <div class="main-content">
+            <div class="header">Social Media Analytics</div>
+            <div class="card" id="overview-card">
+                <h3>Overview Analytics</h3>
+                <div class="chart-container">
+                    <canvas id="overviewChart"></canvas>
+                </div>
+            </div>
+            <div class="card" id="platform-card" style="display: none;">
+                <h3 id="platform-title">Platform Analytics</h3>
+                <div class="chart-container">
+                    <canvas id="analyticsChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
